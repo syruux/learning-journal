@@ -24,7 +24,7 @@ nav {
     background-color: #ffffff;
 }
 
-nav div a {
+.nav-links a {
     margin-left: 2em;
     font-size: 0.75rem;
     font-weight: 600;
@@ -35,9 +35,26 @@ nav div a {
     padding-bottom: 4px;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: #0e0e0e;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.nav-logo img {
+    width: 25px;
+}
+
 /* nav links hover effect */
   
-nav div a:after {
+.nav-links a:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -48,7 +65,7 @@ nav div a:after {
     transition: all 0.3s ease-in-out;
 }
   
-nav div a:hover:after {
+.nav-links a:hover:after {
     width: 100%;
 }
   
@@ -280,11 +297,19 @@ footer span {
     /* navbar */
 
     nav {
-        padding: 1em 2em;
+        padding: 1em 3em;
     }
 
-    nav div a {
+    .nav-links a {
         font-size: 1rem;
+    }
+
+    .nav-logo a {
+        font-size: 1.25rem;
+    }
+
+    .nav-logo img {
+        width: 35px;
     }
     
     /* home hero image switch */
